@@ -3,24 +3,33 @@ using namespace std;
 
 int main()
 {
-	int n;
+	long long n;
+	int temp;
 	cin >> n;
-	int ans=(-1000)*1000-1;
-
-	int x,y;
-	while(n--)
+	vector<int> a;
+	for (int i = 0; i < n; ++i)
 	{
-		cin >> x;
-		y=sqrt(x);
-
-		if(y*y!=x)
+		cin>>temp;
+		a.push_back(temp);
+	}
+	sort(a.begin(), a.end(),greater<int>());
+	for (int i = 0; i < n; ++i)
+	{
+		if (a[i]>=0)
 		{
-			if(x>ans)
-				ans=x;
-			
+			temp = sqrt(a[i]);
+			if (temp*temp != a[i])
+			{
+				cout<<a[i];
+				return 0;
+			}
+		}
+		if (a[i]<0)
+		{
+			cout<<a[i];
+			break;
 		}
 	}
-	cout << ans;
 
 	return 0;
 }
