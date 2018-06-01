@@ -1,18 +1,12 @@
-vector<int> Solution::allFactors(int A) 
+string Solution::findDigitsInBinary(int A) 
 {
-    vector<int> ans;
-    for(int i=1;i<= sqrt(A);i++)
+    if (A > 1)
     {
-        if(A%i ==0)
-        {
-            ans.push_back(i);
-            if(i!= sqrt(A))
-            {
-                ans.push_back(A/i);
-            }
-        }
-    }
-    //ans.push_back(A);
-    sort(ans.begin(), ans.end());
-    return ans;
+        Solution::findDigitsInBinary(A/2);
+    }  
+    cout<<A%2;
+    
+    string s="";
+    return s;
+
 }
