@@ -1,12 +1,16 @@
 int Solution::gcd(int A, int B) 
 {
-    if ( B == 0)
-  {
+    if(A<B) 
+    {
+        int temp=A;
+        A=B;
+        B=temp;
+    }
+    while(B!=0) 
+    {
+        int temp=B;
+        B=A%B;
+        A=temp;
+    }
     return A;
-  }
-  else 
-  {    
-    long long a1 = A % B;
-    return Solution::gcd(B,a1);
-  }    
 }
