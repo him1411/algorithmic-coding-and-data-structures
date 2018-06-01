@@ -1,4 +1,5 @@
-vector<int> Solution::sieve(int n) {
+vector<int> Solution::sieve(int n) 
+{
     vector<int> v(n+1);
     vector<int> a;
     for( int i =0; i<=n; i++)
