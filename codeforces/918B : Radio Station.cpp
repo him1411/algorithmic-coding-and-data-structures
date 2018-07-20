@@ -35,7 +35,7 @@ int32_t main()
     for (int i = 0; i < m; ++i)
     {
     	int pos = find(ip.begin(), ip.end(), ip2[i]) - ip.begin();
-    	if( pos < ip.size()  )
+    	//if( pos < ip2.size()  )
     	{
     		cout<<com[i]<<" "<<ip2[i]<<"; #"<<name[pos]<<endl;
     	}
