@@ -1,4 +1,2 @@
 # algorithmic-coding-and-data-structures
-
-
-collection of all my codes related to data structures and algorithms 
+<h5>A collection of all the solutions I have made for problems on various competitive coding websites</h5>
